@@ -16,7 +16,7 @@ The dataset used is sourced from the Dogs vs. Cats Redux competition (Kaggle com
   * test.zip: Contains 12,500 unlabeled images for model evaluation. (1.jpg, 2.jpg, ..., 12500.jpg)
 
   ### 2) Label
-  Target Variable: Binary label indicating image class: 1 for dog, 0 for cat
+  Target Variable: Binary label 1 for dog and 0 for cat
 
 ## Project Method
 In this Cat VS Dog image classification project, Convolutional Neural Networks (CNNs) is used for image binary classification to distinguish between dogs and cats. Built with deep learning frameworks like TensorFlow and Keras, it showcases techniques in image processing and applying CNNs to binary classification problems.
