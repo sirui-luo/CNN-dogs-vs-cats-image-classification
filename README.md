@@ -12,7 +12,7 @@ The dataset used is sourced from the Dogs vs. Cats Redux competition (Kaggle com
   
   ### 1) Data Structure
   The dataset includes two main ZIP archives:
-  * train.zip: Contains 25,000 labeled images of dogs and cats. (filename format: dog.0.jpg, dog.1.jpg, ..., cat.0.jpg, cat.1.jpg, ...)
+  * train.zip: Contains 12,500 labeled images of dogs and 12,500 labeled images of cats. (filename format: dog.0.jpg, dog.1.jpg, ..., cat.0.jpg, cat.1.jpg, ...)
   * test.zip: Contains 12,500 unlabeled images for model evaluation. (1.jpg, 2.jpg, ..., 12500.jpg)
 
   ### 2) Label
