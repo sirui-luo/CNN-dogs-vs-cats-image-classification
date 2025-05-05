@@ -1,5 +1,6 @@
 # Dogs vs. Cats: Binary Image Classification Using Convolutional Neural Networks (CNN)
-![Copy of Blue Professional Extensive Mind Map Graph](https://github.com/user-attachments/assets/ef9e4830-dd30-49da-8f1c-3619b75ece17)
+<img width="1348" alt="image" src="https://github.com/user-attachments/assets/6afaeddf-5def-4d15-b118-c5440c94d16b" />
+
 
 ## Project Objective
 The objective is to develop deep learning models for binary image classification - whether an image contains cat or dog - using Convolutional Neural Networks (CNNs). The project aims to:
