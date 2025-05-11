@@ -27,5 +27,6 @@ In order to compare performance across different models, prediction probability 
 
 ## Model Choosing
 ### 1. ResNet
+ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning.
 <img width="718" alt="image" src="https://github.com/user-attachments/assets/7fe7cc1d-b8c6-4866-b773-c36699d744c2" />
 
