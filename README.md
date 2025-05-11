@@ -24,3 +24,8 @@ In this Cat VS Dog image classification project, Convolutional Neural Networks (
 
 ## Model Evaluation
 In order to compare performance across different models, prediction probability (of being labelled as 1) is generated on the test dataset. Then the result is assessed via Kaggle’s log loss evaluation metric.
+
+## Model Choosing
+### 1. ResNet
+<img width="718" alt="image" src="https://github.com/user-attachments/assets/7fe7cc1d-b8c6-4866-b773-c36699d744c2" />
+
