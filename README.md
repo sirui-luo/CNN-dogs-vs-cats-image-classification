@@ -34,7 +34,7 @@ ResNet is a deep CNN architecture that uses residual connections to enable effic
 ### 2. ResNet + XGBoosting
 In this model, ResNet serves as a fixed feature extractor, generating deep 2048-dimensional feature vectors. These features are then passed to an external XGBoost classifier, which captures nonlinear patterns and feature interactions more effectively than a single logistic layer, leading to improved performance on binary classification tasks.
 
-<img width="517" alt="image" src="https://github.com/user-attachments/assets/a29c0501-d473-4c4b-ab19-95c5902fd8bf" />
+<img width="1210" alt="image" src="https://github.com/user-attachments/assets/5554f7a9-e3e0-4e98-8ba3-03411ee9999c" />
 
 
 
