@@ -32,10 +32,11 @@ ResNet is a deep CNN architecture that uses residual connections to enable effic
 <img width="823" alt="image" src="https://github.com/user-attachments/assets/cab2cb76-0bb9-4c2a-91b8-e9486aa23cb7" />
 
 ### 2. ResNet + XGBoosting
-In this model, ResNet serves as a fixed feature extractor, generating deep 2048-dimensional feature vectors. These features are then passed to an external XGBoost classifier, which captures nonlinear patterns and feature interactions more effectively than a single logistic layer, leading to improved performance on binary classification tasks.
+In this pipeline, ResNet serves as a fixed feature extractor, generating deep 2048-dimensional feature vectors. These features are then passed to an external XGBoost classifier, which captures nonlinear patterns and feature interactions more effectively than a single logistic layer, leading to improved performance on binary classification tasks.
 
 <img width="939" alt="image" src="https://github.com/user-attachments/assets/dac557fb-6f87-40f9-98c9-00ed9712a1ec" />
 
-
+### 3. ConvNeXt + logistic regression
+ConvNeXt is a modern CNN architecture inspired by transformer design principles, offering improved efficiency and performance on image classification tasks. In this pipeline, a pretrained ConvNeXt-Tiny model is fine-tuned by replacing its final classification layer for binary prediction. The model processes normalized 224×224 RGB images, and outputs softmax-based probabilities to distinguish two classes.
 
 
