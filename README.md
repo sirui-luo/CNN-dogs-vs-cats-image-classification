@@ -26,9 +26,13 @@ In this Cat VS Dog image classification project, Convolutional Neural Networks (
 In order to compare performance across different models, prediction probability (of being labelled as 1) is generated on the test dataset. Then the result is assessed via Kaggle’s log loss evaluation metric.
 
 ## Model Choosing
-### 1. ResNet
-ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning.
+### 1. ResNet + logistic regression
+ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
+<img width="560" alt="image" src="https://github.com/user-attachments/assets/ae8eddb1-704e-4def-bde9-9299d71fc65d" />
 
-<img width="665" alt="image" src="https://github.com/user-attachments/assets/12c01455-2919-4fac-9d32-65e042cf8446" />
+### 2. ResNet + XGBoosting
+In this model, ResNet serves as a fixed feature extractor, generating deep 2048-dimensional feature vectors. These features are then passed to an external XGBoost classifier, which captures nonlinear patterns and feature interactions more effectively than a single logistic layer, leading to improved performance on binary classification tasks.
+<img width="517" alt="image" src="https://github.com/user-attachments/assets/a29c0501-d473-4c4b-ab19-95c5902fd8bf" />
+
 
 
