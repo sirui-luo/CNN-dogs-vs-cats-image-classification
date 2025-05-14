@@ -29,7 +29,7 @@ In order to compare performance across different models, prediction probability 
 ### 1. ResNet + logistic regression
 ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
 
-<img width="893" alt="image" src="https://github.com/user-attachments/assets/9192c0f2-1b98-40e2-b809-c6869c4bcfa3" />
+<img width="823" alt="image" src="https://github.com/user-attachments/assets/cab2cb76-0bb9-4c2a-91b8-e9486aa23cb7" />
 
 ### 2. ResNet + XGBoosting
 In this model, ResNet serves as a fixed feature extractor, generating deep 2048-dimensional feature vectors. These features are then passed to an external XGBoost classifier, which captures nonlinear patterns and feature interactions more effectively than a single logistic layer, leading to improved performance on binary classification tasks.
