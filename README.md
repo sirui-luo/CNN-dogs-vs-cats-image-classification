@@ -6,10 +6,9 @@
 The objective is to develop deep learning models for binary image classification - whether an image contains cat or dog - using Convolutional Neural Networks (CNNs). The project aims to:
 * Apply image preprocessing techniques to prepare raw image data for training
 * Design CNN-based models and evaluate model performance on binary classification tasks
-* Demonstrate practical application of deep learning in computer vision
 
 ## Data Description
-The dataset used is from the Dogs vs. Cats Redux competition (Kaggle competition). It consists of high-resolution JPEG images of dogs and cats intended for binary image classification.
+The dataset used is from the Dogs vs. Cats Redux competition, consisting of high-resolution JPEG images of dogs and cats intended for binary image classification.
   
   ### 1) Data Structure
   The dataset includes two main ZIP archives:
