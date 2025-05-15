@@ -29,14 +29,18 @@ In order to compare performance across different models, prediction probability 
 ### 1. ResNet + logistic regression
 ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
 
-<img width="823" alt="image" src="https://github.com/user-attachments/assets/cab2cb76-0bb9-4c2a-91b8-e9486aa23cb7" />
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/eb37a4a4-d638-40e7-a86c-970712b02279" />
+
 
 ### 2. ResNet + XGBoosting
 In this pipeline, ResNet serves as a fixed feature extractor, generating deep 2048-dimensional feature vectors. These features are then passed to an external XGBoost classifier, which captures nonlinear patterns and feature interactions more effectively than a single logistic layer, leading to improved performance on binary classification tasks.
 
-<img width="939" alt="image" src="https://github.com/user-attachments/assets/dac557fb-6f87-40f9-98c9-00ed9712a1ec" />
+<img width="777" alt="image" src="https://github.com/user-attachments/assets/9ab30190-040e-4697-9808-abb30e4d3343" />
+
 
 ### 3. ConvNeXt + logistic regression
-ConvNeXt is a modern CNN architecture inspired by transformer design principles, offering improved efficiency and performance on image classification tasks. In this pipeline, a pretrained ConvNeXt-Tiny model is fine-tuned by replacing its final classification layer for binary prediction. The model processes normalized 224×224 RGB images, and outputs softmax-based probabilities to distinguish two classes.
+ConvNeXt-Tiny is a modern CNN inspired by transformer design. In this pipeline, a pretrained ConvNeXt-Tiny model is fully fine-tuned for binary classification by replacing its original head. It processes 224×224 normalized images and outputs softmax-based probabilities for two classes.
+Compared with ResNet: ConvNeXt modernizes the classic ResNet by incorporating design principles from Vision Transformers and lightweight CNNs. It replaces ReLU with smoother GELU activation, swaps BatchNorm for LayerNorm for better stability, and uses depthwise separable convolutions with larger 7×7 kernels to expand the receptive field. ConvNeXt applies a more gradual downsampling and inverted bottlenecks for richer feature extraction. Combined with modern training techniques like AdamW, cosine scheduling, and layer scaling, ConvNeXt achieves significantly better accuracy and generalization.
 
+<img width="743" alt="image" src="https://github.com/user-attachments/assets/a9ec04af-6d4a-4aca-a56f-ce0d9a6b5c16" />
 
