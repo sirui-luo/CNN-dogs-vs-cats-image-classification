@@ -9,31 +9,16 @@ The objective is to develop deep learning models for binary image classification
 * Design CNN-based models and evaluate model performance on binary classification tasks
 
 **Data Description**:
-
 The dataset used is from the Dogs vs. Cats Redux competition, consisting of high-resolution JPEG images of dogs and cats intended for binary image classification.
   
-  ***1) Data Structure***:
-  
-  The dataset includes two main ZIP archives:
-  * train.zip: Contains 12,500 labeled images of dogs and 12,500 labeled images of cats. (filename format: dog.0.jpg, dog.1.jpg, ..., cat.0.jpg, cat.1.jpg, ...)
-  * test.zip: Contains 12,500 unlabeled images for model evaluation. (filename format: 1.jpg, 2.jpg, ..., 12500.jpg)
-
-  ***2) Label***:
-  
-  Target Variable: Binary label 1 for dog and 0 for cat
-
-**Project Method**:
-
-In this Cat VS Dog image classification project, Convolutional Neural Networks (CNNs) is used for image binary classification to distinguish between dogs and cats. Built with deep learning frameworks like TensorFlow and Keras, it showcases techniques in image processing and applying CNNs to binary classification problems.
+ 
 
 **Model Evaluation**:
-
 In order to compare performance across different models, prediction probability (of being labelled as 1) is generated on the test dataset. Then the result is assessed via Kaggle’s log loss evaluation metric.
 
 **Model Choosing**:
 
-***1. ResNet + logistic regression***:
-ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
+***1. ResNet + logistic regression***: ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
 
 <img width="749" alt="image" src="https://github.com/user-attachments/assets/eb37a4a4-d638-40e7-a86c-970712b02279" />
 
