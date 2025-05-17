@@ -14,7 +14,9 @@ The dataset used is from the Dogs vs. Cats Redux competition, consisting of high
 **Model Evaluation**:  
 In order to compare performance across different models, prediction probability (of being labelled as 1) is generated on the test dataset. Then the result is assessed via Kaggle’s log loss evaluation metric.
 
+
 **Model Choosing**:  
+
 ***1. ResNet + logistic regression***:  
 ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
 
