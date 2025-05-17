@@ -3,6 +3,7 @@
 
 
 **Project Objective**:  
+
 The objective is to develop deep learning models for binary image classification - whether an image contains cat or dog - using Convolutional Neural Networks (CNNs). The project aims to:
 * Apply image preprocessing techniques to prepare raw image data for training
 * Design CNN-based models and evaluate model performance on binary classification tasks
