@@ -16,7 +16,6 @@ In order to compare performance across different models, prediction probability 
 
 
 **Model Choosing**:  
-
 ***1. ResNet + logistic regression***:  
 ResNet is a deep CNN architecture that uses residual connections to enable efficient training of very deep networks and is widely used for transfer learning. Here, the ResNet extracts a deep feature vector, which is passed to the added logistic layer to produce binary class probabilities for classification.
 
