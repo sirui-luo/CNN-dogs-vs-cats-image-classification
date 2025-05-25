@@ -28,7 +28,7 @@ In this pipeline, ResNet serves as a fixed feature extractor, generating deep 20
 ***3. ConvNeXt + logistic regression***:  
 ConvNeXt-Tiny is a modern CNN inspired by transformer design. In this pipeline, a pretrained ConvNeXt-Tiny model is fully fine-tuned for binary classification by replacing its original head. It processes 224×224 normalized images and outputs softmax-based probabilities for two classes.
 
-Compared to ResNet: ConvNeXt uses GELU activation, LayerNorm, and 7×7 depthwise convolutions to enhance stability and expand the receptive field. With gradual downsampling, inverted bottlenecks, and modern training techniques like AdamW and cosine scheduling, ConvNeXt delivers significantly better generalization.
+Compared to ResNet: ConvNeXt uses GELU activation, LayerNorm, and 7×7 depthwise convolutions to enhance stability. With gradual downsampling, inverted bottlenecks, and modern training techniques like AdamW, ConvNeXt delivers better generalization.
 
 <img width="704" alt="image" src="https://github.com/user-attachments/assets/5c778331-5ecf-4c72-881b-389f8a8e1c9e" />
 
